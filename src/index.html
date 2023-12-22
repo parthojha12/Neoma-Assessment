@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App API</title>
+    <style>
+      .maindiv {
+        background-color: black;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+      }
+      .container{
+        margin-top: 10vh
+      }
+      .almabetter {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2vh 0;
+        text-align: center;
+      }
+      .upperdiv {
+        background-color: aqua;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: aqua;
+      }
+      .lowerdiv {
+        margin-top: 2vh;
+        background-color: aquamarine;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      ul li {
+        margin: 2vh;
+      }
+      h2 {
+        margin-top: 5px;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div class="container">
+        <div class="almabetter">
+          <h1>NEOMA ASSIGNMENT</h1>
+        </div>
+        <div class="upperdiv">
+          <h1> Real-time Weather App API </h1>
+          <h2>You can try entering each route using the routes given below</h2>
+        </div>
+        <div class="lowerdiv">
+          <ul>
+            <li>
+              GET <b>/weathers</b> : Get all locations user has added in database collection. Example: <b>http://localhost:8080/weathers</b> 
+            </li>
+            <li>
+                POST <b>/weathers/:lat/:lon</b> : User can add weather forecast of any location by latitude(lat) and longitude(lon). Example:<b>http://localhost:8080/weathers/-29.8579/31.0292</b>
+              </li>
+            <li>
+              POST <b>/weathers/:cityName</b> : User can add weather forecast of any location by City (cityName). Example:<b>http://localhost:8080/weathers/delhi</b>
+            </li>
+            <li>
+                GET <b>/weathers/:identifier</b> : User can get weather forecast data of that location from database collection by using ID or City.
+              </li>
+              <li>
+                PUT <b>/weathers/:identifier</b> : User can update weather data of that particular location from database by using its ID or City name.
+              </li>
+            <li>
+              DELETE <b>/weathers/:identifier</b> : Delete weather data from database collection by ID or City.
+            </li>
+            <li> Example for /weathers/:identifiers :<b> http://localhost:8080/weathers/delhi</b> or<b> http://localhost:8080/weathers/65852bacb9ec64a796ad9780</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
