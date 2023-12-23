@@ -75,6 +75,8 @@ This project not only showcases effective use of popular technologies but also p
 
 You'll need to have **Node.js** and **MongoDB** installed on your computer in order to begin working on the project. 
 
+Use your mongodb **URI connection** to connect with your database. And use your own **API_KEY**, if this don't work. Everything else can be used from code. Define your api key and db_url in **.env**
+
 Once installed, Clone this repository to your **local** machine.
 
 Install the required dependencies as mentioned below by using **npm install <packageName>**.
